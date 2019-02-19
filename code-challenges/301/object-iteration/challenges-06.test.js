@@ -106,6 +106,7 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
+  let result;
   arr.forEach(element => {
       if( element.name === character){
         let characterArr = Object.values(arr[arr.indexOf(element)]); 
@@ -128,6 +129,7 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
+    let result;
     arr.forEach(element => {
         if( element.name === character){
           let characterArr = Object.entries(arr[arr.indexOf(element)]);
