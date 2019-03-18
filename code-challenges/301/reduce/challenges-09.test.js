@@ -9,11 +9,9 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-    let count =0 ;
-    arr.reduce( function(){
-        return count++;
+  return arr.reduce((accumulator, currentValue)=>{
+      return ++accumulator;
   },0);
-  return count;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,7 +72,7 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
     let nameArr =[];
-    arr.reduce( function(acc, obj) {
+    arr.reduce((acc, obj)=> {
         let key = obj.name;
         return nameArr.push(key);
       }, 0);
@@ -145,18 +143,9 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-    let count = 0;
-    let childrenArr =[];
-    arr.reduce(function(acc, obj){
-        if(obj.children){
-            childrenArr.push(obj.children); 
-        }
-        return childrenArr;
-    },0);
-    childrenArr.reduce(function(acc, arr){
-        count+= arr.length;
-    },0);
-    return count;
+  return arr.reduce((accumulator, current) => {
+    return current.children ? accumulator + current.children.length : accumulator;
+  }, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -168,13 +157,13 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-    let count = 0;
-    let sum = 0;
-    arr.reduce(function(acc, cur){
-        count ++;
-        sum += cur;
-    },0);
-    return sum/count;
+  let count = 0;
+  let sum = 0;
+  arr.reduce(function(acc, cur){
+      count ++;
+      sum += cur;
+  },0);
+  return sum/count;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -279,6 +268,7 @@ const extractChildren = (arr) => {
   },0);
   return childrenArr;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
