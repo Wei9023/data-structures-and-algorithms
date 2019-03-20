@@ -1,6 +1,7 @@
 # data-structures-and-algorithms
 Part of growing as a programmer is to practice, practice, practice. Throughout this repo, I will complete a set of daily code challenges. Each set will contain up to ten problems.
 
+
 # Reverse an Array
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
@@ -28,3 +29,4 @@ I find the middle index first and then move those numbers behind and make an emp
 
 ## Solution
 ![white board image](/assert/WechatIMG160.jpeg)
+
