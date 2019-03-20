@@ -1,0 +1,27 @@
+{
+  "name": "data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "Part of growing as a programmer is to practice, practice, practice. Throughout this repo, I will complete a set of daily code challenges. Each set will contain up to ten problems.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --coverage --verbose --testPathIgnorePatterns code-challenges/301/",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wei9023/data-structures-and-algorithms.git"
+  },
+  "author": "vanessa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wei9023/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/Wei9023/data-structures-and-algorithms#readme",
+  "dependencies": {
+    "eslint": "^5.15.3",
+    "jest": "^24.5.0"
+  }
+}
