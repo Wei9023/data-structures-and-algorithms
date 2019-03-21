@@ -1,6 +1,7 @@
 # data-structures-and-algorithms
 Part of growing as a programmer is to practice, practice, practice. Throughout this repo, I will complete a set of daily code challenges. Each set will contain up to ten problems.
 
+
 # Reverse an Array
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
@@ -42,4 +43,5 @@ The challenge is how to change the middle point automatically and continue the p
  After deciding which side to choose adjust the start index and end index
 
 ## Solution
-![ white board](./assert/IMG_6508.JPG)
+![ white board](/assert/IMG_6508.JPG)
+
