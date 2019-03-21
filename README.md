@@ -40,4 +40,4 @@ The challenge is how to change the middle point automatically and continue the p
  After deciding which side to choose adjust the start index and end index
 
 ## Solution
-![ white board](./assert/IMG_6508.JPG)
+![ white board](./assert/binary.jpeg)
