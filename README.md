@@ -34,11 +34,9 @@ I find the middle index first and then move those numbers behind and make an emp
 Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 
 ## Challenge
-<!-- Description of the challenge -->
 The challenge is how to change the middle point automatically and continue the process untill find the target number.
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
  After deciding which side to choose adjust the start index and end index
 
 ## Solution
