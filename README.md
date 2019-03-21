@@ -31,7 +31,7 @@ I find the middle index first and then move those numbers behind and make an emp
 ![white board image](/assert/WechatIMG160.jpeg)
 
 
-# Binary search in a sorted 1D array
+# Binary search in a sorted array
 Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 
 ## Challenge
