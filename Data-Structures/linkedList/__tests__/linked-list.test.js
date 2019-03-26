@@ -1,5 +1,5 @@
 'use strict';
-const List = require('../linkedList/linked-list.js');
+const List = require('../linked-list.js');
 
 describe('Linked list', () => {
 
@@ -50,6 +50,41 @@ describe('Linked list', () => {
     let linkedList = new List.LinkedList();
     linkedList.insert(2,3,4,5);
     expect(linkedList.printList()).toEqual('5 4 3 2 ');
+  });
+
+  //Can properly append a values at the end of  the linked list
+  it('Can properly append a values at the end of  the linked list', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.insert(2,3,4,5);
+    linkedList.append(10);
+    expect(linkedList.printList()).toEqual('5 4 3 2 10 ');
+  });
+
+//Can properly append an array of values at the end of the linked list
+  it('Can properly append an array of values at the end of the linked list', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.insert(2,3,4,5);
+    linkedList.append(10,15,20);
+    console.log('linkedList:aaabbbbb1');
+    console.log(linkedList);
+    expect(linkedList.printList()).toEqual('5 4 3 2 10 15 20 ');
+  });
+
+  //Can properly insert a value before a value exists in the linked list
+  it('Can properly insert a value before a value exists in the linked list', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.append(1,3,5)
+    linkedList.insertBefore(3,2);
+    
+    expect(linkedList.printList()).toEqual('1 2 3 5 ');
+  });
+
+  //Can properly insert a value after a value exists in the linked list
+  it('Can properly append an array of values at the end of the linked list', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.append(1,3,5)
+    linkedList.insertBefore(3,4);
+    expect(linkedList.printList()).toEqual('1 3 4 5 ');
   });
 
 });
