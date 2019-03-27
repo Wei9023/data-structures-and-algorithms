@@ -91,5 +91,33 @@ describe('Linked list', () => {
     expect(linkedList.valueFromEnd(1)).toEqual(3);
   });
 
+  // Where k is greater than the length of the linked list
+  it(' Where k is greater than the length of the linked list', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.append(1,3,5);
+    expect(linkedList.valueFromEnd(4)).toBeFalsy();
+  });
+
+  // Where k and the length of the list are the same
+  it(' Where k and the length of the list are the same', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.append(1,3,5);
+    expect(linkedList.valueFromEnd(3)).toBeFalsy();
+  });
+
+  // Where k is not a positive integer
+  it(' Where k is not a positive integer', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.append(1,3,5);
+    expect(linkedList.valueFromEnd(-2)).toBeFalsy();
+  });
+
+  //Where the linked list is of a size 1
+  it(' Where the linked list is of a size 1', () => {
+    let linkedList = new List.LinkedList();
+    linkedList.append(1);
+    expect(linkedList.valueFromEnd(0)).toEqual(1);
+  });
+
 });
 
