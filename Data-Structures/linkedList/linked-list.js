@@ -130,12 +130,13 @@ class LinkedList {
     let current = this.head;
     let arr = [];
     let arraySize = k+1;
-    arr.length = arraySize;
+    
 
-    if(!this.head){
+    if(!this.head || k < 0){
       return false;
     } else{
       while(current !== null){
+        arr.length = arraySize;
         arr[countLength % arraySize] = current.element; 
         countLength ++;  
         current = current.next;  
