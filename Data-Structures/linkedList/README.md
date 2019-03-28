@@ -43,3 +43,10 @@ Followed the instruction of reading documents
 ![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](./assets/IMG_2161.JPG)
 ![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](./assets/IMG_6764.JPG)
 ![white board for [valueFromEnd](### valueFromEnd)](./assets/IMG_6636.JPG)
+
+# Code Challenge: Class 08
+
+Challenge adds a methods to the LinkedList class:
+* `mergeLists` - takes two linked lists as arguments. Zips the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Keeps additional space down to O(1). 
+## Whiteboard
+![Class 8 whiteboard](../assets/class08.jpeg)

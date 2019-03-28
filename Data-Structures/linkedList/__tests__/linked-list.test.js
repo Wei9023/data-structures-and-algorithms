@@ -124,5 +124,14 @@ describe('Linked list', () => {
     expect(linkedList.valueFromEnd(0)).toEqual(1);
   });
 
+  //Expected outcome
+  it(' Can merge two linked list', () => {
+    let linkedList = new List.LinkedList();
+    let l1 = new List.LinkedList();
+    let l2 = new List.LinkedList();
+    l1.append(1,2,3);
+    l2.append(4,5,6);
+    expect(linkedList.merge(l1, l2)).toEqual(1,4,2,5,3,6);
+  });
 });
 

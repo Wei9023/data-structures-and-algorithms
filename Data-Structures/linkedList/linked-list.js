@@ -145,6 +145,51 @@ class LinkedList {
       
     }
   }
+
+  // merge(linkedListSecond){
+  //   let first = this.head;
+  //   let second = linkedListSecond.head;
+  //   let firstNext = null;
+  //   let secondNext = null;
+
+  //   while(first.next !== null && second.next !== null){
+  //     firstNext =first.next;
+  //     secondNext = second.next;
+  //     second.next = firstNext;
+  //     first.next = second;
+  //     first = first.next;
+  //     second = second.next;
+  //   }
+  //   return ;
+  // }
+  merge(l1,l2){
+    var ret = null,    // return value, first node
+      prev = null;   // previous node
+    
+    while (l1 && l2) {
+      if (l1.element < l2.element) {
+        // l1.value < l2.value, join l1 node to the list and  step to the next l1
+        prev ? prev.next = prev = l1
+          : ret = prev = l1;
+        l1 = l1.next;
+      } else {
+        // l2.value <= l1.value, join l2 node to the list and step to the next l2
+        prev ? prev.next = prev = l2
+          : ret = prev = l2;
+        l2 = l2.next;
+      }
+    }
+    if (!l1) {
+      // no more l1 nodes, join l2 to the list
+      prev ? prev.next = l2
+        : ret = l2;
+    } else {
+      // no more l2 nodes, join l1 to the list
+      prev ? prev.next = l1
+        : ret = l1;
+    }
+    return ret;
+  }
 }
 
 module.exports = {LinkedList};
