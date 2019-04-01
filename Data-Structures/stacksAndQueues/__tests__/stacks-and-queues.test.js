@@ -14,7 +14,7 @@ describe('`Stack` class', () => {
   it('Can successfully `push` onto a stack', () => {
     let stack = new Stack();
     stack.push('hello');
-    expect(stack.top.value).toBe('hello');
+    expect(stack.top.value).toEqual('hello');
   });
 
   //Can successfully push multiple nodes onto a stack
@@ -24,9 +24,9 @@ describe('`Stack` class', () => {
     stack.push('1');
     stack.push('2');
     stack.push('3');
-    expect(stack.top.value).toBe('3');
-    expect(stack.top.next.value).toBe('2');
-    expect(stack.top.next.next.value).toBe('1');
+    expect(stack.top.value).toEqual('3');
+    expect(stack.top.next.value).toEqual('2');
+    expect(stack.top.next.next.value).toEqual('1');
   });
   //Can successfully pop off the stack
 
@@ -36,9 +36,9 @@ describe('`Stack` class', () => {
     stack.push('2');
     stack.push('3');
     // console.log(stack);
-    expect(stack.top.value).toBe('3');
+    expect(stack.top.value).toEqual('3');
     stack.pop();
-    expect(stack.top.value).toBe('2');
+    expect(stack.top.value).toEqual('2');
   });
   //Can successfully empty a stack after multiple pops.
   it('Can successfully empty a stack after multiple `pop`s.', () => {
@@ -46,11 +46,11 @@ describe('`Stack` class', () => {
     stack.push('1');
     stack.push('2');
     stack.push('3');
-    expect(stack.top.value).toBe('3');
+    expect(stack.top.value).toEqual('3');
     stack.pop();
-    expect(stack.top.value).toBe('2');
+    expect(stack.top.value).toEqual('2');
     stack.pop();
-    expect(stack.top.value).toBe('1');
+    expect(stack.top.value).toEqual('1');
     stack.pop();
     expect(stack.top).toBeNull();
   });
@@ -58,7 +58,7 @@ describe('`Stack` class', () => {
   it('Can successfully peek the next item on the stack.', () => {
     let stack = new Stack();
     stack.push('hello');
-    expect(stack.peek()).toBe('hello');
+    expect(stack.peek()).toEqual('hello');
   });
 });
 
@@ -75,44 +75,44 @@ describe('`Queue` class', () => {
   it('Can successfully enqueue onto a queue', () => {
     let queue = new Queue();
     queue.enqueue('hello');
-    expect(queue.front.value).toBe('hello');
+    expect(queue.front.value).toEqual('hello');
   });
   //Can successfully enqueue multiple items into a queue
   it('Can successfully enqueue multiple items into a queue', () => {
     let queue = new Queue();
     queue.enqueue('1');
-    expect(queue.front.value).toBe('1');
+    expect(queue.front.value).toEqual('1');
     queue.enqueue('2');
-    expect(queue.back.value).toBe('2');
+    expect(queue.back.value).toEqual('2');
     queue.enqueue('3');
-    expect(queue.back.value).toBe('3');
+    expect(queue.back.value).toEqual('3');
   });
   //Can successfully dequeue off of a queue the expected value
   it('Can successfully dequeue off of a queue the expected value', () => {
     let queue = new Queue();
     queue.enqueue('1');
-    expect(queue.back.value).toBe('1');
+    expect(queue.back.value).toEqual('1');
     queue.enqueue('2');
-    expect(queue.back.value).toBe('2');
-    expect(queue.front.value).toBe('1');
+    expect(queue.back.value).toEqual('2');
+    expect(queue.front.value).toEqual('1');
     queue.dequeue();
-    expect(queue.front.value).toBe('2');
+    expect(queue.front.value).toEqual('2');
   });
   //Can successfully peek into a queue, seeing the expected value
   it('Can successfully peek into a queue, seeing the expected value', () => {
     let queue = new Queue();
     queue.enqueue('1');
-    expect(queue.back.value).toBe('1');
-    expect(queue.peek()).toBe('1');
+    expect(queue.back.value).toEqual('1');
+    expect(queue.peek()).toEqual('1');
     queue.enqueue('2');
-    expect(queue.back.value).toBe('2');
-    expect(queue.peek()).toBe('1');
+    expect(queue.back.value).toEqual('2');
+    expect(queue.peek()).toEqual('1');
     queue.enqueue('3');
-    expect(queue.back.value).toBe('3');
-    expect(queue.peek()).toBe('1');
+    expect(queue.back.value).toEqual('3');
+    expect(queue.peek()).toEqual('1');
     queue.enqueue('4');
-    expect(queue.back.value).toBe('4');
-    expect(queue.peek()).toBe('1');
+    expect(queue.back.value).toEqual('4');
+    expect(queue.peek()).toEqual('1');
   });
   //Can successfully empty a queue after multiple dequeues
   it('Can successfully empty a queue after multiple dequeues', () => {
@@ -121,8 +121,8 @@ describe('`Queue` class', () => {
     queue.enqueue('2');
     queue.enqueue('3');
     queue.enqueue('4');
-    expect(queue.back.value).toBe('4');
-    expect(queue.peek()).toBe('1');
+    expect(queue.back.value).toEqual('4');
+    expect(queue.peek()).toEqual('1');
     queue.dequeue();
     queue.dequeue();
     queue.dequeue();

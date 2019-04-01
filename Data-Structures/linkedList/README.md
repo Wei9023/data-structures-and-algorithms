@@ -40,13 +40,14 @@
 Followed the instruction of reading documents
 
 ## White board
-![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](https://photos.google.com/album/AF1QipPAkDb2gLOVkNcS9DY4xq6Zkarlhm0VamPW77j6/photo/AF1QipNQ7Flvff6T1xKK6gF00ia4oO-NNtJJ1EJeuhUr)
+![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](../assets/IMG_2161.JPG)
+![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](../assets/IMG_6764.JPG)
+![white board for [valueFromEnd](### valueFromEnd)](../assets/IMG_6636.JPG)
 
-![white board for [valueFromEnd](### valueFromEnd)](https://photos.google.com/album/AF1QipPAkDb2gLOVkNcS9DY4xq6Zkarlhm0VamPW77j6/photo/AF1QipOhhsppJvf0B98xo85NLb2dkwbDziXoJQADpvcn)
 
 # Code Challenge: Class 08
 
 Challenge adds a methods to the LinkedList class:
 * `mergeLists` - takes two linked lists as arguments. Zips the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Keeps additional space down to O(1). 
 ## Whiteboard
-![Class 8 whiteboard](https://photos.google.com/album/AF1QipPAkDb2gLOVkNcS9DY4xq6Zkarlhm0VamPW77j6/photo/AF1QipP_8tYayUpQDZYNWpGeMBnHsxWTGSorzNDNPOps)
+![Class 8 whiteboard](../assets/class-08.jpeg)
