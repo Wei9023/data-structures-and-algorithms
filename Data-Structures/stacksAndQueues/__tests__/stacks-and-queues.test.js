@@ -35,7 +35,7 @@ describe('`Stack` class', () => {
     stack.push('1');
     stack.push('2');
     stack.push('3');
-    console.log(stack);
+    // console.log(stack);
     expect(stack.top.value).toBe('3');
     stack.pop();
     expect(stack.top.value).toBe('2');
