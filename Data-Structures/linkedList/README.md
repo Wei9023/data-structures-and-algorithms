@@ -40,9 +40,9 @@
 Followed the instruction of reading documents
 
 ## White board
-![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](./assets/IMG_2161.JPG)
-![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](./assets/IMG_6764.JPG)
-![white board for [valueFromEnd](### valueFromEnd)](./assets/IMG_6636.JPG)
+![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](../assets/IMG_2161.JPG)
+![white board for [append, insertBefore, insertAfter](### append, insertBefore, insertAfter)](../assets/IMG_6764.JPG)
+![white board for [valueFromEnd](### valueFromEnd)](../assets/IMG_6636.JPG)
 
 # Code Challenge: Class 08
 
