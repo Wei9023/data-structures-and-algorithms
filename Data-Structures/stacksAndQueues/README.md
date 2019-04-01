@@ -3,7 +3,7 @@
 Implement a Stack and a Queue Data Structure
 [![Build Status](https://travis-ci.org/Wei9023/data-structures-and-algorithms.svg?branch=stacks-and-queues)](https://travis-ci.org/Wei9023/data-structures-and-algorithms)
 
-![My travis is very full of message of other code challenge so I attached an image](.assets/s&q.png)
+![My travis is very full of message of other code challenge so I attached an image](../assets/s&q.png)
 
 ## Challenge
 <!-- Description of the challenge -->
