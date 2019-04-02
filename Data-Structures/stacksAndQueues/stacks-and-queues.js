@@ -36,17 +36,28 @@ class Stack {
     // return top most element in the stack 
     // and removes it from the stack 
     // Underflow if stack is empty 
+    // let top;
+    // if (this.top.next) {
+    //   top = this.top;
+    //   this.top = this.top.next;
+    // } else if (this.top) {
+    //   top = this.top;
+    //   this.top = null;
+    // } else {
+    //   return null;
+    // }
+    // return top.value;
+    
     let top;
-    if (this.top.next) {
+    if (this.top) {
       top = this.top;
       this.top = this.top.next;
-    } else if (this.top) {
-      top = this.top;
-      this.top = null;
-    } else {
+    }
+    if(top){
+      return top.value;
+    }else{
       return null;
     }
-    return top.value;
   }
 
   // peek() 

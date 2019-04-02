@@ -47,12 +47,15 @@ describe('`Stack` class', () => {
     stack.push('2');
     stack.push('3');
     expect(stack.top.value).toEqual('3');
-    stack.pop();
+    
+    expect(stack.pop()).toEqual('3');
     expect(stack.top.value).toEqual('2');
-    stack.pop();
+    expect(stack.pop()).toEqual('2');
     expect(stack.top.value).toEqual('1');
-    stack.pop();
+    expect(stack.pop()).toEqual('1');
     expect(stack.top).toBeNull();
+    console.log('abc;' + stack.pop());
+    expect(stack.pop()).toBeNull();
   });
   //Can successfully peek the next item on the stack.
   it('Can successfully peek the next item on the stack.', () => {
