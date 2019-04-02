@@ -32,7 +32,7 @@ Implement a Stack and a Queue Data Structure
 Implement a Queue using two Stacks.
 [![Build Status](https://travis-ci.org/Wei9023/data-structures-and-algorithms.svg?branch=queue_with_stacks)](https://travis-ci.org/Wei9023/data-structures-and-algorithms)
 
-![My travis is very full of message of other code challenge so I attached an image](../assets/Screen Shot 2019-04-02 at 01.32.04.png)
+![My travis is very full of message of other code challenge so I attached an image](../assets/qwithstacks.png)
 
 ## Challenge
 <!-- Description of the challenge -->
