@@ -67,5 +67,5 @@ First-in, First out Animal Shelter.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Whiteboard
-![queue with stacks](../assets/IMG_7009.JPG)
+![queue with stacks](../assets/fifo-animal.JPG)
 
