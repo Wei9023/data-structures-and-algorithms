@@ -48,4 +48,24 @@ Implement a Queue using two Stacks.
 ## Whiteboard
 ![queue with stacks](../assets/queuewithstacks.jpeg)
 
+# fifo_animal_shelter
+<!-- Short summary or background information -->
+First-in, First out Animal Shelter.
+[![Build Status](https://travis-ci.org/Wei9023/data-structures-and-algorithms.svg?branch=stacks-and-queues)](https://travis-ci.org/Wei9023/data-structures-and-algorithms)
+
+![My travis is very full of message of other code challenge so I attached an image](../assets/s&q.png)
+
+## Challenge
+<!-- Description of the challenge -->
+ #### Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+ 
+##### Implement the following methods:
+* enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+* dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Whiteboard
+![queue with stacks](../assets/queuewithstacks.jpeg)
 
