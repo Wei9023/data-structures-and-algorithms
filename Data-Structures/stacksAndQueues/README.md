@@ -53,7 +53,7 @@ Implement a Queue using two Stacks.
 First-in, First out Animal Shelter.
 [![Build Status](https://travis-ci.com/Wei9023/data-structures-and-algorithms.svg?branch=fifo_animal_shelter)](https://travis-ci.com/Wei9023/data-structures-and-algorithms)
 
-![My travis is very full of message of other code challenge so I attached an image](../assets/s&q.png)
+![My travis is very full of message of other code challenge so I attached an image](../assets/fifo-travis.png)
 
 ## Challenge
 <!-- Description of the challenge -->
@@ -67,5 +67,5 @@ First-in, First out Animal Shelter.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Whiteboard
-![queue with stacks](../assets/fifo-animal.JPG)
+![fifo-animal-shelter](../assets/fifo-animal.jpeg)
 
