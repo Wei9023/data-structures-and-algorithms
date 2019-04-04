@@ -69,3 +69,24 @@ First-in, First out Animal Shelter.
 ## Whiteboard
 ![fifo-animal-shelter](../assets/fifo-animal.jpeg)
 
+# Multi-bracket Validation.
+<!-- Short summary or background information -->
+Multi-bracket Validation.
+[![Build Status](https://travis-ci.org/Wei9023/data-structures-and-algorithms.svg?branch=multi_bracket_validation)](https://travis-ci.org/Wei9023/data-structures-and-algorithms)
+
+![My travis is very full of message of other code challenge so I attached an image](../assets/fifo-travis.png)
+
+## Challenge
+<!-- Description of the challenge -->
+ ####  a function called multiBracketValidation(input),Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Whiteboard
+![fifo-animal-shelter](../assets/fifo-animal.jpeg)
+
+
