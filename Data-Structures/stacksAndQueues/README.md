@@ -74,7 +74,7 @@ First-in, First out Animal Shelter.
 Multi-bracket Validation.
 [![Build Status](https://travis-ci.org/Wei9023/data-structures-and-algorithms.svg?branch=multi_bracket_validation)](https://travis-ci.org/Wei9023/data-structures-and-algorithms)
 
-![My travis is very full of message of other code challenge so I attached an image](../assets/fifo-travis.png)
+![My travis is very full of message of other code challenge so I attached an image](../assets/multi-travis.png)
 
 ## Challenge
 <!-- Description of the challenge -->
@@ -87,6 +87,6 @@ Curly Brackets : {}
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Whiteboard
-![fifo-animal-shelter](../assets/fifo-animal.jpeg)
+![fifo-animal-shelter](../assets/multi-brackets.jpeg)
 
 
