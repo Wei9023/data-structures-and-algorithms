@@ -1,6 +1,6 @@
 # Trees
 Implement a Tree
-![Travis] (../tree.png)
+![Travis] (../../tree.png)
 
 ## Challenge
 ### Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
