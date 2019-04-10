@@ -1,5 +1,6 @@
 # Trees
 Implement a Tree
+![Travis](./tree.png)
 
 ## Challenge
 ### Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
@@ -21,6 +22,7 @@ contain(value);
 
 # breadth_first
 Breadth-first Traversal
+![](./breadthfirst.png)
 
 ## Challenge
 * Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
@@ -28,3 +30,4 @@ Breadth-first Traversal
 
 ## Whiteboard
 ![](./breadth.jpeg)
+
