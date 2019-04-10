@@ -1,4 +1,7 @@
 'use strict';
+const {Queue} = require('../../Data-Structures/stacksAndQueues/stacks-and-queues.js')
+
+
 
 class Node {
   constructor(data) {
@@ -17,7 +20,7 @@ class BinaryTree {
     let treeArr = [];
     if(node !== null) { 
       this.inorder(node.left); 
-      console.log(node.data);
+      // console.log(node.data);
       treeArr.push(node.data); 
       this.inorder(node.right); 
     } 
@@ -28,7 +31,7 @@ class BinaryTree {
   preorder(node) { 
     let treeArr = [];
     if(node != null) { 
-      console.log(node.data);
+      // console.log(node.data);
       treeArr.push(node.data); 
       this.preorder(node.left); 
       this.preorder(node.right); 
@@ -38,16 +41,40 @@ class BinaryTree {
 
   postorder(node) {
     let treeArr = []; 
-    console.log(node);
+    // console.log(node);
     if(node != null) { 
       this.postorder(node.left);
-      console.log(node.left) ;
+      // console.log(node.left) ;
       this.postorder(node.right); 
-      console.log(node.right);
-      console.log(node.data);
+      // console.log(node.right);
+      // console.log(node.data);
       treeArr.push(node.data); 
     } 
     return treeArr;
+  }
+
+  breadthFisrtTraversal(){
+    let queue = new Queue();
+   
+    let output = [];
+    let currentNode = this.root;
+    queue.enqueue(currentNode);
+    if (!currentNode) {
+      return null;
+    }
+    while(queue.peek()) {
+      currentNode = queue.dequeue();
+      output.push(currentNode.data);
+      
+      if(currentNode.left) {
+        queue.enqueue(currentNode.left);
+      }
+      if(currentNode.right) {
+        queue.enqueue(currentNode.right);
+      }
+      
+    }
+    return output;
   }
 }
 

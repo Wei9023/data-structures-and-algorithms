@@ -18,3 +18,16 @@ preorder(node);
 postorder(node);
 add(data);
 contain(value);
+
+
+# breadth_first
+Breadth-first Traversal
+![](./breadthfirst.png)
+
+## Challenge
+* Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+
+
+## Whiteboard
+![](./breadth.jpeg)
+

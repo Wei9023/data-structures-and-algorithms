@@ -52,3 +52,21 @@ describe('Binary Seach Tree', () => {
     expect(tree.contain(45)).toBeFalsy();
   });
 });
+
+describe('Binary Tree', () => {
+
+  it('Returns `null` if the tree is empty', () => {
+    const tree = new BinaryTree();
+    expect(tree.breadthFisrtTraversal()).toBeNull();
+  });
+
+  it('Can traversal a binary tree in breadth first', () => {
+    let tree = new BinarySearchTree();
+    let values = [9,4,17,3,6,22,5,7,20];
+    values.map( val => tree.add(val));
+    console.log(tree);
+    console.log(tree.breadthFisrtTraversal());
+    expect(tree.breadthFisrtTraversal()).toEqual(values);
+  });
+
+});
