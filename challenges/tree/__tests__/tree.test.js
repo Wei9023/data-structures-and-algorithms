@@ -64,9 +64,23 @@ describe('Binary Tree', () => {
     let tree = new BinarySearchTree();
     let values = [9,4,17,3,6,22,5,7,20];
     values.map( val => tree.add(val));
-    console.log(tree);
-    console.log(tree.breadthFisrtTraversal());
+    // console.log(tree);
+    // console.log(tree.breadthFisrtTraversal());
     expect(tree.breadthFisrtTraversal()).toEqual(values);
+  });
+
+  it('Returns `null` if the tree is empty', () => {
+    const tree = new BinaryTree();
+    expect(tree.findMaximumValue()).toBeNull();
+  });
+
+  it('Can return the max value inside of a binary tree', () => {
+    let tree = new BinarySearchTree();
+    let values = [9,4,17,3,6,22,5,7,20];
+    values.map( val => tree.add(val));
+    // console.log(tree);
+    // console.log(tree.findMaximumValue());
+    expect(tree.findMaximumValue()).toEqual(22);
   });
 
 });

@@ -1,5 +1,5 @@
 'use strict';
-const {Queue} = require('../../Data-Structures/stacksAndQueues/stacks-and-queues.js')
+const {Queue} = require('../../Data-Structures/stacksAndQueues/stacks-and-queues.js');
 
 
 
@@ -71,11 +71,38 @@ class BinaryTree {
       }
       if(currentNode.right) {
         queue.enqueue(currentNode.right);
-      }
-      
+      } 
     }
     return output;
   }
+
+  findMaximumValue(node=this.root){
+    if(node === null){
+      return null;
+    }
+    //   let max = node.data;
+    //   let leftVal = this.findMaximumValue(node.left.data);
+    //   console.log('left', leftVal);
+    //   let rightVal = this.findMaximumValue(node.right.data);
+    //   console.log('right', rightVal);
+    //   if( leftVal && leftVal > max){
+    //     max = leftVal;
+    //   }
+    //   if(rightVal && rightVal > max){
+    //     max = rightVal;
+    //   }
+    //   return max;
+    // }
+    let arr = this.breadthFisrtTraversal();
+    let max =0;
+    arr.forEach(val => {
+      if(val > max){
+        max = val;
+      }
+    });
+    return max;
+  }
+
 }
 
 
