@@ -83,4 +83,13 @@ describe('Binary Tree', () => {
     expect(tree.findMaximumValue()).toEqual(22);
   });
 
+  it('Can return the max value inside of a binary tree', () => {
+    let tree = new BinarySearchTree();
+    let values = [9,4,17,3,6,22,5,7,20];
+    values.map( val => tree.add(val));
+    // console.log(tree);
+    // console.log(tree.findMaximumValue());
+    expect(tree.oddSum()).toEqual(41);
+  });
+
 });
