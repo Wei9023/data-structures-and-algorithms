@@ -31,5 +31,4 @@ describe('mergesort', () => {
     let arr = [1];
     expect(mergesort(arr)).toEqual([1]);
   });
-  
 });
