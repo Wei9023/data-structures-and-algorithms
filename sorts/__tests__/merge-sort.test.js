@@ -5,11 +5,6 @@ const { mergesort } = require('../merge-sort.js');
 describe('mergesort', () => {
 
   it('A randomly generated unsorted array returns the array sorted', () => {
-    
-    expect(mergesort([1,3,5])).toEqual([1,3,5]);
-  });
-
-  it('A randomly generated unsorted array returns the array sorted', () => {
     let arr = [];
     for( let i = 0; i< 5; i++){
       arr[i] = Math.random()*10;
