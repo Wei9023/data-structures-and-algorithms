@@ -13,7 +13,7 @@ Space O(1)
 
 ## Merge Sort
 Implement merge Sort
-![insertion](./insertion.png);
+![insertion](./merge.png);
 
 ### Challenge
 Write a function for merge sort that takes in an unsorted array and returns the array sorted using merge sort.
