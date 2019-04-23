@@ -103,6 +103,23 @@ class BinaryTree {
     return max;
   }
 
+  oddSum(node=this.root, arr=[]){
+    let sum = 0;
+    if(node !== null){
+      if(node.data % 2 !== 0){
+        arr.push(node.data);
+      }
+      this.oddSum(node.left, arr);
+      this.oddSum(node.right, arr);
+    }
+    for(let i=0; i<arr.length; i++){
+      sum = sum + arr[i];
+    }
+    return sum;
+  }
+
+  
+
 }
 
 
